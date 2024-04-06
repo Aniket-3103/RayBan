@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in css</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+            /* animation-name: widthAn;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: 8;
+            animation-direction: alternate; */
+
+            /* animation: name duration  timing-function  delay iteration-count   direction */
+            
+            animation: fontAnimation 2s ease-in-out 1s 10  alternate;
+        }
+
+        /* can use percentage too */
+        @keyframes widthAn{
+            from{width: 200px;}
+            to{
+                width: 400px;
+            }
+        }
+        @keyframes fontAnimation{
+            from{font-size: 16px;
+                width: 200px;
+            }
+            to{
+                font-size: 35px;
+                width: 400px;
+            }
+        }
+
+        @keyframes colorAnimate {
+            from{
+                background-color: cadetblue;
+            }
+            to{
+                background-color: blueviolet;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- @keyframe name{from{} to{}} -->
+    <h1>Animation</h1>
+    <div class="box">This is a box</div>
+</body>
+</html>

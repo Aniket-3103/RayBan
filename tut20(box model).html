@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            background-image: url('https://source.unsplash.com/random');
+        }
+        .container{
+            background-color: tomato;
+            border: 5px solid rgb(181, 15, 172);
+            /* padding: 23px; */
+            padding: 23px 23px;
+            margin: 23px 45px;
+            border-radius: 23px;
+            width: 1322px;
+            height: 173px;
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my first heading</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, pariatur molestias. Cumque accusamus quibusdam, repudiandae similique excepturi distinctio, quaerat nobis quidem quam ullam aliquam.</p>
+    </div>
+    <div class="container">
+        <h3>This is my second heading</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, pariatur molestias. Cumque accusamus quibusdam, repudiandae similique excepturi distinctio, quaerat nobis quidem quam ullam aliquam.</p>
+    </div>
+    <div class="container">
+        <h3>This is my third heading</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, pariatur molestias. Cumque accusamus quibusdam, repudiandae similique excepturi distinctio, quaerat nobis quidem quam ullam aliquam.</p>
+    </div>
+</body>
+</html>
